@@ -39,7 +39,7 @@ const featuredProjects: CardItem[] = [
       "Created executive-summary, evidence, limitation, and investigation views.",
       "Focused on making data analysis understandable to non-technical users.",
     ],
-    link: "https://github.com/Zlawal79/datasage-ai",
+    link: "/projects/datasage",
   },
   {
     id: "sentinelml",
@@ -54,6 +54,7 @@ const featuredProjects: CardItem[] = [
       "Combines ML-oriented detection with a security-operations dashboard experience.",
       "Emphasizes transparent inputs, labels, testing, and responsible model communication.",
     ],
+    link: "/projects/sentinelml",
   },
   {
     id: "careflow",
@@ -69,7 +70,7 @@ const featuredProjects: CardItem[] = [
       "Created dashboard-style outputs for inspecting workflow execution.",
       "Used tests to validate core language and simulation behaviour.",
     ],
-    link: "https://github.com/Zlawal79/careflow-studio",
+    link: "/projects/careflow-studio",
   },
   {
     id: "skypredict",
@@ -85,7 +86,7 @@ const featuredProjects: CardItem[] = [
       "Avoided target leakage by excluding outcome-only flight information.",
       "Built an interactive Streamlit experience for prediction and model insights.",
     ],
-    link: "https://github.com/Zlawal79/skypredict",
+    link: "/projects/skypredict",
   },
 ];
 

@@ -40,10 +40,18 @@ export default function ResearchPage() {
     </nav>
 
     <section className="mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-28">
-      <p className="inline-flex rounded-full border border-purple-200 bg-white px-4 py-2 text-sm font-bold text-purple-700">Applied Research · Smart & Resilient Energy Systems</p>
+      <p className="inline-flex rounded-full border border-purple-200 bg-white px-4 py-2 text-sm font-bold text-purple-700">Applied Research · Hybrid Energy · Resilience · Sustainability</p>
       <h1 className="mt-6 max-w-5xl font-serif text-5xl font-bold leading-tight md:text-7xl">Resilient multi-generation systems for <span className="text-purple-600">interconnected services.</span></h1>
-      <p className="mt-7 max-w-4xl text-lg leading-8 text-purple-950/70">My research explores integrated energy systems that support electricity, freshwater, hydrogen, and cooling. The work brings together simulation, optimization, digital-twin concepts, resilience assessment, probabilistic modeling, uncertainty analysis, and techno-economic evaluation.</p>
+      <p className="mt-7 max-w-4xl text-lg leading-8 text-purple-950/70">My ongoing co-op research explores simulation-based resiliency analysis of hybrid multi-generation energy systems supporting electricity, freshwater, hydrogen, heating and cooling. The work connects renewable and alternative energy pathways, storage, waste-to-energy and heat-recovery concepts, digital-twin simulation, optimization, probabilistic resilience, uncertainty analysis, lifecycle and techno-economic evaluation, and software-based engineering tools.</p>
       <p className="mt-4 max-w-4xl leading-7 text-purple-950/55">This portfolio presents the research workflow and my contributions at a public-safe level. Detailed unpublished model data and research-sensitive implementation details are intentionally omitted.</p>
+    </section>
+
+    <section className="mx-auto max-w-7xl px-6 pb-8 md:px-8">
+      <div className="grid gap-4 md:grid-cols-3">
+        <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm"><p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Co-op Research</p><p className="mt-2 text-xl font-bold">May 2026 – Present</p><p className="mt-2 text-sm leading-6 text-purple-950/60">Smart & Resilient Energy Systems, Ontario Tech University</p></div>
+        <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm"><p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Primary Case Study</p><p className="mt-2 text-xl font-bold">Gbamu-Gbamu, Nigeria</p><p className="mt-2 text-sm leading-6 text-purple-950/60">Rural African community case study for integrated multi-service energy access.</p></div>
+        <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm"><p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Research Output</p><p className="mt-2 text-xl font-bold">IEEE SEGE 2026</p><p className="mt-2 text-sm leading-6 text-purple-950/60">Conference presentation and Student Innovation Competition recognition.</p></div>
+      </div>
     </section>
 
     <section className="mx-auto max-w-7xl px-6 py-8 md:px-8">
@@ -67,11 +75,24 @@ export default function ResearchPage() {
     </section>
 
     <section className="mx-auto max-w-7xl px-6 py-16 md:px-8">
+      <div className="rounded-[2.5rem] border border-purple-100 bg-white p-8 shadow-sm md:p-10">
+        <p className="text-sm font-bold uppercase tracking-[.2em] text-purple-600">Energy + Environment + Software</p>
+        <h2 className="mt-3 font-serif text-4xl font-bold">A cross-disciplinary engineering problem</h2>
+        <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="rounded-2xl bg-purple-50 p-6"><h3 className="text-xl font-bold">Energy Systems</h3><p className="mt-3 leading-7 text-purple-950/65">Renewable generation, batteries, hydrogen production and storage, fuel-cell backup, geothermal and thermal pathways, waste-to-energy/biogas concepts, heat recovery, and integrated multi-generation operation.</p></div>
+          <div className="rounded-2xl bg-purple-50 p-6"><h3 className="text-xl font-bold">Environment & Sustainability</h3><p className="mt-3 leading-7 text-purple-950/65">Rural energy access, freshwater production, agricultural demand, cooling, resource efficiency, lifecycle thinking, emissions and sustainability considerations, and resilient community infrastructure.</p></div>
+          <div className="rounded-2xl bg-purple-50 p-6"><h3 className="text-xl font-bold">Software & Modeling</h3><p className="mt-3 leading-7 text-purple-950/65">MATLAB/Simulink digital twins, MG-OPT, HOMER Pro validation, Python/Octave workflows, dashboards, optimization, Monte Carlo analysis, fault/event-tree reasoning, visualization, and reproducible scenario studies.</p></div>
+        </div>
+        <div className="mt-6 rounded-2xl border border-purple-200 p-6"><h3 className="text-xl font-bold">Nuclear & broader hybrid-energy context</h3><p className="mt-3 leading-7 text-purple-950/65">The research sits within a broader smart and hybrid-energy environment that includes renewable, thermal, hydrogen, and nuclear-energy systems. My portfolio distinguishes the components directly modeled in the rural multi-generation case study from the wider nuclear and hybrid-energy research context I have been exposed to through the lab and IEEE SEGE/SPANS environment.</p></div>
+      </div>
+    </section>
+
+    <section className="mx-auto max-w-7xl px-6 py-16 md:px-8">
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="rounded-[2rem] border border-purple-100 bg-white p-8 shadow-sm">
           <p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Case Study Approach</p>
           <h2 className="mt-3 font-serif text-4xl font-bold">Community-scale integrated energy</h2>
-          <p className="mt-5 leading-8 text-purple-950/70">A rural-community case study is used to explore how renewable generation, battery and hydrogen storage, fuel-cell backup, water production, cooling, and other energy pathways interact when demands and resource conditions change.</p>
+          <p className="mt-5 leading-8 text-purple-950/70">Gbamu-Gbamu in Ogun State, Nigeria is the primary rural African case study used to explore how renewable generation, battery and hydrogen storage, fuel-cell backup, water production, cooling, and other energy pathways interact when demands and resource conditions change.</p>
           <p className="mt-4 leading-8 text-purple-950/70">The emphasis is not only on whether energy is available, but on which services remain covered, how interdependencies propagate stress, and how the system recovers.</p>
         </div>
         <div className="rounded-[2rem] bg-purple-700 p-8 text-white">
@@ -83,6 +104,12 @@ export default function ResearchPage() {
     </section>
 
     <section className="mx-auto max-w-7xl px-6 py-20 md:px-8">
+      <div className="mb-16 rounded-[2.5rem] bg-purple-950 p-8 text-white md:p-10">
+        <p className="text-sm font-bold uppercase tracking-[.2em] text-purple-300">IEEE SEGE 2026</p>
+        <h2 className="mt-3 font-serif text-4xl font-bold">Analysis and Simulation of Integrated Multi-Generation Micro-Energy Systems in Rural African Communities</h2>
+        <p className="mt-5 max-w-4xl leading-8 text-purple-100">I presented this work with Dr. Hossam A. Gabbar at the 14th IEEE International Conference on Smart Energy Grid Engineering at Ontario Tech University. The conference program lists the project in its Student Innovation Competition awards section.</p>
+        <a href="https://www.ieee-sege.com" target="_blank" className="mt-7 inline-block rounded-full bg-white px-6 py-3 font-bold text-purple-900">IEEE SEGE 2026</a>
+      </div>
       <h2 className="text-center font-serif text-4xl font-bold md:text-5xl">Tools & Methods</h2>
       <div className="mt-9 flex flex-wrap justify-center gap-3">{tools.map(t=><span key={t} className="rounded-full border border-purple-100 bg-white px-5 py-3 font-semibold text-purple-700 shadow-sm">{t}</span>)}</div>
     </section>

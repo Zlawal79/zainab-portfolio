@@ -12,6 +12,9 @@ const features = [
   "HOMER Pro validation workflow support",
   "Engineering architecture diagrams",
   "Optimization-based decision support",
+  "Multi-service resilience assessment",
+  "Probability-informed disturbance analysis",
+  "Monte Carlo uncertainty analysis",
   "Performance and feasibility reporting",
 ];
 
@@ -30,8 +33,8 @@ const applications = [
 
 const tools = [
   {
-    name: "MATLAB",
-    purpose: "Used for simulation workflows, engineering calculations, and scenario analysis.",
+    name: "MATLAB / Simulink",
+    purpose: "Used for dynamic simulation workflows, engineering calculations, digital-twin development, and scenario analysis.",
   },
   {
     name: "HOMER Pro",
@@ -89,7 +92,8 @@ const contributions = [
   "Supported HOMER Pro validation workflows for feasibility-style analysis.",
   "Prepared technical documentation, presentation visuals, and public-safe explanations.",
   "Translated complex engineering results into clear dashboard sections for technical communication.",
-  "Practiced connecting software development with engineering research and decision-making.",
+  "Connected software development with engineering research and decision-making.",
+  "Extended the workflow toward multi-service resilience, fault-tree reasoning, and Monte Carlo uncertainty analysis.",
 ];
 
 const lessons = [
@@ -145,7 +149,7 @@ export default function MGOPTPage() {
           evaluate integrated energy systems capable of producing electricity,
           hydrogen, freshwater, and cooling. The project connects research,
           optimization, dashboard development, scenario testing, and technical
-          communication.
+          communication. The broader research workflow also connects the platform to digital-twin simulation, multi-service resilience, and probability-informed disturbance analysis.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">

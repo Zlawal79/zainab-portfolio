@@ -189,9 +189,9 @@ const experience: CardItem[] = [
     id: "usrf",
     title: "Smart Energy Systems Research Assistant",
     category: "Ontario Tech University · USRF Co-op",
-    date: "May 2026 – August 2026",
-    tools: ["MATLAB", "Simulink", "HOMER Pro", "MG-OPT", "Research"],
-    summary: "Worked on integrated multi-generation energy research spanning electricity, freshwater, hydrogen, cooling, digital-twin simulation, optimization, resilience, and technical communication.",
+    date: "May 2026 – Present",
+    tools: ["MATLAB", "Simulink", "HOMER Pro", "MG-OPT", "Python/Octave", "Research"],
+    summary: "Ongoing co-op research on simulation-based resiliency analysis of hybrid multi-generation energy systems, connecting electricity, freshwater, hydrogen, heating/cooling, storage, renewable and alternative energy pathways, digital-twin simulation, optimization, uncertainty, and technical communication.",
     bullets: ["Developed and evaluated simulation and optimization workflows.", "Connected engineering analysis with dashboards and visual communication.", "Supported scenario studies, validation workflows, technical reports, and presentations."],
     detail: "/research",
   },
@@ -222,6 +222,24 @@ const experience: CardItem[] = [
     tools: ["HTML", "CSS", "Bootstrap", "JavaScript"],
     summary: "Built interactive Grade 12 Data Management lesson pages with an emphasis on accessibility and clear learning experiences.",
     bullets: ["Developed curriculum-aligned interactive lessons.", "Used responsive web technologies and visual examples.", "Focused on accessibility and student engagement."],
+  },
+];
+
+const conferenceHighlights: CardItem[] = [
+  {
+    id: "sege-2026",
+    title: "IEEE SEGE 2026",
+    category: "14th International Conference on Smart Energy Grid Engineering",
+    date: "August 19–21, 2026 · Ontario Tech University",
+    tools: ["Research Presentation", "Energy Systems", "Simulation", "Resilience", "Technical Communication"],
+    summary: "Presented “Analysis and Simulation of Integrated Multi-Generation Micro-Energy Systems in Rural African Communities” with Dr. Hossam A. Gabbar at IEEE SEGE 2026 and was listed in the conference's Student Innovation Competition awards section.",
+    bullets: [
+      "Presented an integrated multi-generation energy-system study centered on resilient and sustainable infrastructure for rural African communities.",
+      "Connected software simulation and engineering analysis with electricity, hydrogen, freshwater, cooling, storage, and resource interdependencies.",
+      "Used Gbamu-Gbamu, Ogun State, Nigeria as the primary rural-community case study.",
+      "Communicated the work to an interdisciplinary smart-energy audience spanning grid engineering, renewables, storage, digital systems, sustainability, and nuclear/plasma research."
+    ],
+    link: "https://www.ieee-sege.com",
   },
 ];
 
@@ -272,7 +290,7 @@ export default function Home() {
         <div>
           <p className="mb-5 inline-flex rounded-full border border-purple-200 bg-white px-4 py-2 text-sm font-semibold text-purple-700 shadow-sm">Software Engineering · Applied Research · AI/ML</p>
           <h1 className="font-serif text-5xl font-bold leading-[1.05] md:text-7xl">I build software and intelligent systems for <span className="bg-gradient-to-r from-purple-800 via-purple-600 to-fuchsia-500 bg-clip-text text-transparent">real-world problems.</span></h1>
-          <p className="mt-7 max-w-3xl text-lg leading-8 text-purple-950/70">I&apos;m Zainab Lawal, a Software Engineering student at Ontario Tech University. My work spans resilient energy infrastructure and digital twins, machine learning, cybersecurity, data products, and full-stack applications.</p>
+          <p className="mt-7 max-w-3xl text-lg leading-8 text-purple-950/70">I&apos;m Zainab Lawal, a Software Engineering student at Ontario Tech University. My work spans resilient energy infrastructure and digital twins, machine learning, cybersecurity, data products, and full-stack applications. I&apos;m currently seeking Winter 2027 and Summer 2027 co-op opportunities.</p>
           <div className="mt-9 flex flex-wrap gap-3">
             <a href="#projects" className="rounded-full bg-purple-700 px-7 py-4 font-bold text-white shadow-lg shadow-purple-200 transition hover:-translate-y-1">Explore My Work</a>
             <Link href="/research" className="rounded-full border border-purple-200 bg-white px-7 py-4 font-bold text-purple-800 transition hover:-translate-y-1">Research Case Study</Link>

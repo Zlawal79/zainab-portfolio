@@ -10,17 +10,28 @@ const stages = [
 ];
 
 const services = [
-  ["Electricity", "Generation, storage, backup supply, and critical electrical demand."],
-  ["Freshwater", "Water-production pathways and service coverage under changing operating conditions."],
-  ["Hydrogen", "Electrolysis, storage, fuel-cell interaction, and hydrogen-service availability."],
-  ["Cooling", "Cooling demand and its dependence on available energy and integrated system operation."],
+  ["Electricity", "Generation, storage, backup supply, and critical electrical demand across interconnected community services."],
+  ["Freshwater", "MED desalination, water treatment, irrigation demand, and freshwater service coverage under changing operating conditions."],
+  ["Hydrogen", "PEM and SOEC electrolysis, hydrogen storage, SOFC interaction, thermal integration, and hydrogen-service availability."],
+  ["Heating & Cooling", "Absorption refrigeration/cooling, thermal demand, cold-storage applications, and recovery of useful heat across the integrated system."],
 ];
 
-const tools = ["MATLAB", "Simulink", "MG-OPT", "HOMER Pro", "Python", "Monte Carlo Simulation", "Fault Tree Analysis", "Digital Twin Modeling", "Optimization", "Techno-Economic Analysis", "Technical Visualization", "Research Writing"];
+const conversionSystems = [
+  ["SOEC — Solid Oxide Electrolysis", "High-temperature steam electrolysis is studied alongside PEM electrolysis. The research examines how SOEC can use electricity and thermal energy, including recovered waste heat, to reduce electrical demand and strengthen integration within a multi-generation system."],
+  ["SOFC — Solid Oxide Fuel Cell", "SOFC technology is studied for efficient electricity and heat production and as part of a coupled hydrogen-energy pathway. Its useful thermal output creates opportunities for combined heat-and-power operation and for supporting other thermal processes."],
+  ["PEM Electrolysis", "PEM provides a lower-temperature hydrogen-production pathway and a reference for comparing electrical demand, hydrogen output, storage requirements, and integration with variable renewable generation."],
+  ["SOEC–SOFC Thermal Integration", "A key direction is recovering useful heat from SOFC, gas-turbine, geothermal, or other thermal pathways and using it to support SOEC operation, linking hydrogen production, electricity generation, heat recovery, and system efficiency."],
+  ["MED Desalination", "Multi-Effect Distillation connects the energy system to freshwater production, allowing water demand and thermal-energy requirements to be studied alongside electricity, hydrogen, and community service coverage."],
+  ["Absorption Refrigeration & Cooling", "Absorption refrigeration/cooling converts available thermal energy into useful cooling, connecting heat recovery to community cooling, agriculture, food preservation, and cold-storage applications."],
+  ["Waste-to-Energy & Biogas", "Waste and biogas pathways treat local waste streams as potential energy resources, supporting circular-resource use and broader Waste–Water–Energy–Transportation–Food sustainability objectives."],
+  ["Thermal, Nuclear & Hybrid Generation", "The broader architecture considers renewable, geothermal, gas-turbine, organic-cycle, nuclear, storage, and other hybrid pathways where appropriate, emphasizing how generation, conversion, recovery, and storage technologies work together."],
+];
+
+const tools = ["MATLAB", "Simulink", "MG-OPT", "HOMER Pro", "Python", "Octave", "SOEC", "SOFC", "PEM Electrolysis", "MED Desalination", "Absorption Refrigeration", "Heat Recovery", "Monte Carlo Simulation", "Fault Tree Analysis", "Digital Twin Modeling", "Optimization", "Techno-Economic Analysis", "Lifecycle Analysis", "Technical Visualization", "Research Writing"];
 
 const contributions = [
   "Built and refined simulation workflows for integrated multi-generation energy systems.",
-  "Analyzed interactions between electricity, freshwater, hydrogen, cooling, storage, and backup generation.",
+  "Analyzed interactions between electricity, freshwater, hydrogen, heating/cooling, storage, backup generation, and thermal-energy recovery.",\n  "Studied PEM and SOEC hydrogen-production pathways, including high-temperature electrolysis and the role of recovered heat in reducing electrical demand.",\n  "Investigated SOFC electricity-and-heat production and its integration with hydrogen, thermal recovery, and other multi-generation subsystems.",\n  "Connected MED desalination and absorption refrigeration/cooling to the broader energy-water-hydrogen system and community service demands.",
   "Developed multi-service resilience concepts that evaluate more than electrical supply alone.",
   "Worked with scenario-based disturbances, degradation, recovery, and service-coverage metrics.",
   "Extended the resilience framework toward probability-informed analysis using fault-tree logic and Monte Carlo uncertainty analysis.",
@@ -75,12 +86,24 @@ export default function ResearchPage() {
     </section>
 
     <section className="mx-auto max-w-7xl px-6 py-16 md:px-8">
+      <p className="text-center text-sm font-bold uppercase tracking-[.2em] text-purple-600">Energy Conversion & Integration</p>
+      <h2 className="mt-3 text-center font-serif text-4xl font-bold md:text-5xl">More than generation: converting energy, heat, water, and hydrogen</h2>
+      <p className="mx-auto mt-5 max-w-4xl text-center text-lg leading-8 text-purple-950/65">A major part of the research is understanding how individual technologies behave inside an interconnected system. The work goes beyond renewable generation to examine electrolysis, fuel cells, desalination, thermal recovery, cooling, waste-derived energy, storage, and hybrid generation pathways.</p>
+      <div className="mt-10 grid gap-5 md:grid-cols-2">{conversionSystems.map(([name,desc])=><div key={name} className="rounded-3xl border border-purple-100 bg-white p-7 shadow-sm"><h3 className="font-serif text-2xl font-bold text-purple-800">{name}</h3><p className="mt-3 leading-7 text-purple-950/65">{desc}</p></div>)}</div>
+      <div className="mt-6 rounded-3xl bg-purple-950 p-8 text-white">
+        <p className="text-xs font-bold uppercase tracking-[.18em] text-purple-300">SOEC Research Focus</p>
+        <h3 className="mt-3 font-serif text-3xl font-bold">Connecting high-temperature electrolysis with waste-heat recovery</h3>
+        <p className="mt-4 max-w-5xl leading-8 text-purple-100">The SOEC work evaluates high-temperature steam electrolysis alongside the existing PEM pathway rather than simply replacing it. The research compares hydrogen-production efficiency, electrical demand, thermal integration, and overall system performance. Because SOEC can use thermal energy as part of electrolysis, recovered heat from SOFCs and other thermal sources can become a useful system resource. This creates a deeper integration loop between electricity, heat, hydrogen production, storage, and later generation.</p>
+      </div>
+    </section>
+
+    <section className="mx-auto max-w-7xl px-6 py-16 md:px-8">
       <div className="rounded-[2.5rem] border border-purple-100 bg-white p-8 shadow-sm md:p-10">
         <p className="text-sm font-bold uppercase tracking-[.2em] text-purple-600">Energy + Environment + Software</p>
         <h2 className="mt-3 font-serif text-4xl font-bold">A cross-disciplinary engineering problem</h2>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
-          <div className="rounded-2xl bg-purple-50 p-6"><h3 className="text-xl font-bold">Energy Systems</h3><p className="mt-3 leading-7 text-purple-950/65">Renewable generation, batteries, hydrogen production and storage, fuel-cell backup, geothermal and thermal pathways, waste-to-energy/biogas concepts, heat recovery, and integrated multi-generation operation.</p></div>
-          <div className="rounded-2xl bg-purple-50 p-6"><h3 className="text-xl font-bold">Environment & Sustainability</h3><p className="mt-3 leading-7 text-purple-950/65">Rural energy access, freshwater production, agricultural demand, cooling, resource efficiency, lifecycle thinking, emissions and sustainability considerations, and resilient community infrastructure.</p></div>
+          <div className="rounded-2xl bg-purple-50 p-6"><h3 className="text-xl font-bold">Energy Systems</h3><p className="mt-3 leading-7 text-purple-950/65">Renewable generation, batteries, PEM and SOEC hydrogen production, hydrogen storage, SOFC/fuel-cell generation, geothermal and thermal pathways, nuclear and hybrid-energy concepts, waste-to-energy/biogas, gas-turbine and organic-cycle pathways, heat recovery, and integrated multi-generation operation.</p></div>
+          <div className="rounded-2xl bg-purple-50 p-6"><h3 className="text-xl font-bold">Environment & Sustainability</h3><p className="mt-3 leading-7 text-purple-950/65">Rural energy access, MED-based freshwater production, water treatment, irrigation and agriculture, cooling and cold storage, waste-resource recovery, resource efficiency, lifecycle and emissions considerations, and resilient community infrastructure. The broader research connects energy decisions to environmental and community-service outcomes.</p></div>
           <div className="rounded-2xl bg-purple-50 p-6"><h3 className="text-xl font-bold">Software & Modeling</h3><p className="mt-3 leading-7 text-purple-950/65">MATLAB/Simulink digital twins, MG-OPT, HOMER Pro validation, Python/Octave workflows, dashboards, optimization, Monte Carlo analysis, fault/event-tree reasoning, visualization, and reproducible scenario studies.</p></div>
         </div>
         <div className="mt-6 rounded-2xl border border-purple-200 p-6"><h3 className="text-xl font-bold">Nuclear & Hybrid-Energy Systems</h3><p className="mt-3 leading-7 text-purple-950/65">Nuclear energy is part of the broader hybrid multi-generation research scope alongside renewable, thermal, hydrogen, storage, and other integrated energy pathways. The research examines how diverse generation technologies and coupled services can be represented within resilient, sustainable energy-system architectures, while individual case studies use the technologies and assumptions appropriate to their scenario.</p></div>

@@ -48,7 +48,7 @@ export default function ResearchPage() {
 
     <section className="mx-auto max-w-7xl px-6 pb-8 md:px-8">
       <div className="grid gap-4 md:grid-cols-3">
-        <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm"><p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Co-op Research</p><p className="mt-2 text-xl font-bold">May 2026 – Present</p><p className="mt-2 text-sm leading-6 text-purple-950/60">Smart & Resilient Energy Systems, Ontario Tech University</p></div>
+        <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm"><p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Co-op Research</p><p className="mt-2 text-xl font-bold">May 2025 – Present</p><p className="mt-2 text-sm leading-6 text-purple-950/60">Smart & Resilient Energy Systems, Ontario Tech University</p></div>
         <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm"><p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Primary Case Study</p><p className="mt-2 text-xl font-bold">Gbamu-Gbamu, Nigeria</p><p className="mt-2 text-sm leading-6 text-purple-950/60">Rural African community case study for integrated multi-service energy access.</p></div>
         <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm"><p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Research Output</p><p className="mt-2 text-xl font-bold">IEEE SEGE 2026</p><p className="mt-2 text-sm leading-6 text-purple-950/60">Conference presentation and Student Innovation Competition recognition.</p></div>
       </div>
@@ -57,7 +57,7 @@ export default function ResearchPage() {
     <section className="mx-auto max-w-7xl px-6 py-8 md:px-8">
       <div className="rounded-[2.5rem] bg-purple-950 p-8 text-white md:p-12">
         <p className="text-sm font-bold uppercase tracking-[.2em] text-purple-300">Research Question</p>
-        <h2 className="mt-4 font-serif text-4xl font-bold">How can an interconnected multi-generation system remain useful when resources, components, and services are disrupted?</h2>
+        <h2 className="mt-4 font-serif text-4xl font-bold">How can hybrid multi-generation energy systems sustain essential services in rural communities when renewable resources, components, and interconnected services experience disturbances?</h2>
         <p className="mt-5 max-w-4xl text-lg leading-8 text-purple-100">Rather than treating power, water, hydrogen, and cooling as isolated outputs, the research studies them as dependent services. A disturbance in one part of the system can change the availability of several others, so resilience must capture degradation, interdependency, and recovery across the full system.</p>
       </div>
     </section>

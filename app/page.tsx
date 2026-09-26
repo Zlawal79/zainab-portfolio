@@ -9,6 +9,7 @@ const links = {
   linkedin: "https://www.linkedin.com/in/zainab-lawal-4528a4313/",
   email: "mailto:Zainablawal714@gmail.com",
   resume: "/resume.pdf",
+  devpost: "https://devpost.com/zainablawal714?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav",
 };
 
 type CardItem = {
@@ -89,6 +90,16 @@ const featuredProjects: CardItem[] = [
 ];
 
 const hackathons: CardItem[] = [
+  {
+    id: "rahma-technisa",
+    title: "Rahma",
+    category: "TechNisa Hacks 2026 · Team Project",
+    date: "Hackathon Project",
+    tools: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "MapLibre"],
+    summary: "Contributed to an invite-only, hyper-local community platform for Muslim stay-at-home mothers and homemakers, centered on local gatherings, small support pods, privacy-conscious onboarding, and community engagement.",
+    bullets: ["Partnered with a team on the TechNisa hackathon build.", "The platform includes event discovery, pods and chat, rewards, onboarding, maps, and privacy-focused account flows.", "The implementation uses Next.js, TypeScript, Supabase, PostgreSQL, Realtime, Storage, and MapLibre/OpenFreeMap."],
+    link: "https://github.com/imankamrann/TechNisa",
+  },
   {
     id: "equity-decoder",
     title: "Equity Decoder",
@@ -179,6 +190,15 @@ const leadership: CardItem[] = [
   { id:"cppnorth", title:"CppNorth Volunteer", category:"Canadian C++ Conference", date:"July 2025", tools:["Networking","Volunteering","Professional Development"], summary:"Volunteered at a Canadian C++ conference and engaged with the professional software community.", bullets:["Supported conference activities.","Connected with developers and speakers.","Expanded exposure to professional software engineering."] },
 ];
 
+
+const credentials = [
+  { title: "AI Equity Data Challenge — Top 5", issuer: "TECHNATION Canada", date: "Issued November 26, 2025", status: "Achievement", description: "Placed in the Top 5 of TECHNATION Canada's AI Equity Data Student Challenge." },
+  { title: "Smart Communities Challenge — Recognition of Participation", issuer: "Brilliant Catalyst at Ontario Tech University · Earth District", date: "Issued March 16, 2026", status: "Credential", description: "Recognition for participation in the 2026 Earth District: Smart Communities Challenge." },
+  { title: "Welfare Pet Food and Supplies Corp. Customer Experience Brief", issuer: "Riipen Labs", date: "Completed August 28, 2026", status: "Project Credential", description: "Completed an employer project demonstrating product, market-positioning, strategic-planning, mockup, and customer-experience skills." },
+  { title: "Seize the Moment: Software Development Training Completion", issuer: "Brilliant Catalyst at Ontario Tech University", date: "Issued January 13, 2025", status: "Training", description: "Completed software development training covering software technologies, development methodologies, and foundational coding skills." },
+  { title: "IBM Fundamentals Certificate", issuer: "IBM", date: "In progress", status: "In Progress", description: "Currently working toward completion; the verified credential will be added when earned." },
+];
+
 const skillGroups = [
   ["Software Engineering", ["JavaScript", "TypeScript", "React", "Next.js", "React Native", "Node.js", "Java", "C++", "C#", "Git/GitHub", "API Development"]],
   ["AI, ML & Data", ["Python", "Pandas", "scikit-learn", "Machine Learning", "Data Visualization", "SQL", "Grounded AI Workflows"]],
@@ -200,7 +220,7 @@ export default function Home() {
           <a href="#top" className="font-serif text-2xl font-bold">Zainab<span className="text-purple-600">.</span></a>
           <div className="hidden items-center gap-5 text-sm font-semibold text-purple-800 lg:flex">
             <a href="#research">Research</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
-            <a href="#leadership">Leadership</a><a href="#skills">Skills</a><a href="#connect">Connect</a>
+            <a href="#leadership">Leadership</a><a href="#credentials">Credentials</a><a href="#skills">Skills</a><a href="#connect">Connect</a>
           </div>
           <a href={links.resume} target="_blank" className="rounded-full bg-purple-700 px-5 py-2 text-sm font-bold text-white">Resume</a>
         </div>
@@ -247,8 +267,24 @@ export default function Home() {
 
       <Section title="Featured Technical Projects" subtitle="Four projects that show how I approach AI, data, cybersecurity, simulation, and software engineering." id="projects" items={featuredProjects} onSelect={setSelected} featured />
       <Section title="Hackathons & Competitions" subtitle="Team builds created through rapid prototyping, technical competitions, and problem-focused challenges." id="hackathons" items={hackathons} onSelect={setSelected} />
+      <div className="mx-auto max-w-7xl px-6 md:px-8"><div className="flex justify-center"><a href={links.devpost} target="_blank" className="rounded-full border border-purple-200 bg-white px-6 py-3 font-bold text-purple-800 shadow-sm">View my Devpost portfolio →</a></div></div>
       <Section title="Experience" subtitle="Research and software roles where I applied engineering, development, and technical communication." id="experience" items={experience} onSelect={setSelected} />
       <Section title="Leadership & Community" subtitle="Experiences that strengthened how I lead, communicate, mentor, and represent technical work." id="leadership" items={leadership} onSelect={setSelected} />
+
+
+      <section id="credentials" className="mx-auto max-w-7xl px-6 py-20 md:px-8">
+        <p className="text-center text-sm font-bold uppercase tracking-[.2em] text-purple-600">Learning & Recognition</p>
+        <h2 className="mt-3 text-center font-serif text-4xl font-bold md:text-5xl">Credentials & Achievements</h2>
+        <p className="mx-auto mt-4 max-w-3xl text-center leading-7 text-purple-950/60">Verified training, challenge recognition, employer projects, and continuing professional development.</p>
+        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {credentials.map(item => <div key={item.title} className="rounded-3xl border border-purple-100 bg-white p-7 shadow-sm">
+            <div className="flex items-start justify-between gap-3"><p className="text-xs font-bold uppercase tracking-[.14em] text-purple-600">{item.issuer}</p><span className="shrink-0 rounded-full bg-purple-50 px-3 py-1 text-xs font-bold text-purple-700">{item.status}</span></div>
+            <h3 className="mt-4 font-serif text-2xl font-bold text-purple-950">{item.title}</h3>
+            <p className="mt-2 text-sm font-semibold text-purple-950/50">{item.date}</p>
+            <p className="mt-4 leading-7 text-purple-950/70">{item.description}</p>
+          </div>)}
+        </div>
+      </section>
 
       <section id="skills" className="mx-auto max-w-7xl px-6 py-20 md:px-8">
         <p className="text-center text-sm font-bold uppercase tracking-[.2em] text-purple-600">Technical Toolkit</p>
@@ -265,6 +301,7 @@ export default function Home() {
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-purple-950/65">Explore my code, connect with me professionally, or view my résumé. QR codes for GitHub and LinkedIn will also live here for career-fair visitors viewing the portfolio on a laptop.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a href={links.github} target="_blank" className="rounded-full bg-purple-700 px-6 py-3 font-bold text-white">GitHub</a>
+            <a href={links.devpost} target="_blank" className="rounded-full bg-purple-50 px-6 py-3 font-bold text-purple-800">Devpost</a>
             <a href={links.linkedin} target="_blank" className="rounded-full bg-purple-50 px-6 py-3 font-bold text-purple-800">LinkedIn</a>
             <a href={links.resume} target="_blank" className="rounded-full border border-purple-200 px-6 py-3 font-bold text-purple-800">Resume</a>
             <a href={links.email} className="rounded-full border border-purple-200 px-6 py-3 font-bold text-purple-800">Email</a>

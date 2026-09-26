@@ -105,7 +105,7 @@ const hackathons: CardItem[] = [
     id: "equity-decoder",
     title: "Equity Decoder",
     category: "TECHNATION Canada AI Equity Challenge",
-    date: "AI Equity Competition",
+    date: "Top 5 · AI Equity Data Student Challenge 2025",
     tools: ["Python", "FastAPI", "Gemini", "SpaCy", "Chrome Extension"],
     summary: "A bilingual AI-powered Chrome extension that analyzes job postings for potentially exclusionary language and provides inclusive rewrite suggestions.",
     bullets: ["Frontend and UX Lead on a three-person team.", "Connected browser workflows to AI/NLP analysis.", "Designed accessible, dashboard-style feedback and an Equity Score."],
@@ -140,6 +140,47 @@ const hackathons: CardItem[] = [
     summary: "A full-stack carbon-footprint dashboard for tracking activities, trends, categories, and sustainability insights.",
     bullets: ["Worked across database, API, and dashboard layers.", "Built visual reporting with Chart.js.", "Connected sustainability goals with practical full-stack engineering."],
     link: "/projects/carboniq",
+  },
+];
+
+const additionalProjects: CardItem[] = [
+  {
+    id: "vehicle-digital-twin",
+    title: "Software-Defined Vehicle Data Pipeline",
+    category: "Digital Twin + Vehicle Systems",
+    date: "Engineering Project",
+    tools: ["Python", "FastAPI", "Docker", "Eclipse Zenoh", "Eclipse Ditto"],
+    summary: "A vehicle telemetry and digital-twin pipeline exploring diagnostics, fault injection, and networked software-defined vehicle scenarios.",
+    bullets: ["Worked with vehicle telemetry and digital-twin concepts.", "Used API and containerized components in a distributed pipeline.", "Explored diagnostics, faults, and network scenarios."],
+    link: "https://github.com/ayaanahmed05/vehicular-digital-twin-pipeline",
+  },
+  {
+    id: "evacuation",
+    title: "Monte Carlo Evacuation Simulator",
+    category: "Simulation + Risk Analysis",
+    date: "Simulation Project",
+    tools: ["JavaScript", "HTML", "CSS", "Monte Carlo", "Data Visualization"],
+    summary: "A simulation project using repeated randomized trials to explore evacuation outcomes, uncertainty, and risk-oriented visualization.",
+    bullets: ["Applied Monte Carlo simulation concepts.", "Built an interactive browser-based experience.", "Used visualization to communicate uncertain outcomes."],
+  },
+  {
+    id: "distance-sensing",
+    title: "Distance-Sensing Alert System",
+    category: "Embedded + Inclusive Design",
+    date: "Hardware Project",
+    tools: ["Arduino", "C/C++", "Ultrasonic Sensor", "LED", "Buzzer"],
+    summary: "An embedded sensing prototype that translates distance measurements into visual and audible alerts with an inclusive-design focus.",
+    bullets: ["Integrated ultrasonic sensing with alert outputs.", "Programmed embedded behaviour in C/C++.", "Considered accessibility and clear feedback in the interaction design."],
+  },
+  {
+    id: "password-manager",
+    title: "Password Manager",
+    category: "Java + Security Fundamentals",
+    date: "Software Project",
+    tools: ["Java", "SHA-256", "OOP", "Authentication"],
+    summary: "A Java password-management project focused on object-oriented design, authentication concepts, and secure credential-handling fundamentals.",
+    bullets: ["Applied object-oriented programming principles.", "Worked with hashing and authentication concepts.", "Structured credential-management logic in Java."],
+    link: "https://github.com/Zlawal79/Password-manager",
   },
 ];
 
@@ -269,6 +310,7 @@ export default function Home() {
       <Section title="Featured Technical Projects" subtitle="Four projects that show how I approach AI, data, cybersecurity, simulation, and software engineering." id="projects" items={featuredProjects} onSelect={setSelected} featured />
       <Section title="Hackathons & Competitions" subtitle="Team builds created through rapid prototyping, technical competitions, and problem-focused challenges." id="hackathons" items={hackathons} onSelect={setSelected} />
       <div className="mx-auto max-w-7xl px-6 md:px-8"><div className="flex justify-center"><a href={links.devpost} target="_blank" className="rounded-full border border-purple-200 bg-white px-6 py-3 font-bold text-purple-800 shadow-sm">View my Devpost portfolio →</a></div></div>
+      <Section title="Additional Engineering Projects" subtitle="Earlier builds that show breadth across digital twins, simulation, embedded systems, and software security." id="additional-projects" items={additionalProjects} onSelect={setSelected} />
       <Section title="Experience" subtitle="Research and software roles where I applied engineering, development, and technical communication." id="experience" items={experience} onSelect={setSelected} />
       <Section title="Leadership & Community" subtitle="Experiences that strengthened how I lead, communicate, mentor, and represent technical work." id="leadership" items={leadership} onSelect={setSelected} />
 

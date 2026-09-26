@@ -190,8 +190,8 @@ const experience: CardItem[] = [
     title: "Simulation-Based Resiliency Analysis of Hybrid Energy Systems",
     category: "Ontario Tech University · Research Co-op",
     date: "May 2025 – Present",
-    tools: ["MATLAB", "Simulink", "HOMER Pro", "MG-OPT", "Python/Octave", "Research"],
-    summary: "Ongoing research co-op focused on simulation-based resiliency analysis of hybrid multi-generation energy systems and their application to sustainable rural communities. The work connects electricity, freshwater, hydrogen, cooling, storage, renewable and alternative energy pathways, digital twins, optimization, probabilistic resilience, uncertainty, sustainability, and software-based engineering analysis, with Gbamu-Gbamu, Nigeria as a major African case study."
+    tools: ["MATLAB", "Simulink", "HOMER Pro", "MG-OPT", "Python/Octave", "SOEC/SOFC", "Research"],
+    summary: "Ongoing research co-op focused on simulation-based resiliency analysis of hybrid multi-generation energy systems and their application to sustainable rural communities. The work connects electricity, freshwater, hydrogen, cooling, storage, renewable and alternative energy pathways, digital twins, optimization, probabilistic resilience, uncertainty, sustainability, and software-based engineering analysis, with Gbamu-Gbamu, Nigeria as a major African case study.",
     bullets: ["Developed and evaluated simulation and optimization workflows.", "Connected engineering analysis with dashboards and visual communication.", "Supported scenario studies, validation workflows, technical reports, and presentations."],
     detail: "/research",
   },
@@ -228,14 +228,14 @@ const experience: CardItem[] = [
 const conferenceHighlights: CardItem[] = [
   {
     id: "sege-2026",
-    title: "IEEE SEGE 2026 — Research Presenter & Student Innovation Competition Award",
+    title: "IEEE SEGE 2026 — Research Presenter · Student Innovation Competition Awards",
     category: "14th International Conference on Smart Energy Grid Engineering",
     date: "August 19–21, 2026 · Ontario Tech University",
     tools: ["Research Presentation", "Energy Systems", "Simulation", "Resilience", "Technical Communication"],
-    summary: "Presented “Analysis and Simulation of Integrated Multi-Generation Micro-Energy Systems in Rural African Communities” with Dr. Hossam A. Gabbar at IEEE SEGE 2026 and was listed in the conference's Student Innovation Competition awards section.",
+    summary: "Presented “Analysis and Simulation of Integrated Multi-Generation Micro-Energy Systems in Rural African Communities” with Dr. Hossam A. Gabbar at IEEE SEGE 2026. The official conference site lists my project under the Student Innovation Competition Awards, recognizing my participation in the competition and the research presented.",
     bullets: [
       "Presented an integrated multi-generation energy-system study centered on resilient and sustainable infrastructure for rural African communities.",
-      "Connected software simulation and engineering analysis with electricity, hydrogen, freshwater, cooling, storage, and resource interdependencies.",
+      "Connected software simulation and engineering analysis with electricity, hydrogen, freshwater, heating/cooling, storage, SOEC/SOFC pathways, thermal recovery, and resource interdependencies.",
       "Used Gbamu-Gbamu, Ogun State, Nigeria as the primary rural-community case study.",
       "Communicated the work to an interdisciplinary smart-energy audience spanning grid engineering, renewables, storage, digital systems, sustainability, and nuclear/plasma research."
     ],
@@ -315,11 +315,11 @@ export default function Home() {
           <div className="mt-5 grid gap-10 lg:grid-cols-[1.25fr_.75fr]">
             <div>
               <h2 className="font-serif text-4xl font-bold md:text-5xl">Resilient Multi-Generation Energy Systems</h2>
-              <p className="mt-5 max-w-3xl text-lg leading-8 text-purple-100">Researching interconnected systems that supply electricity, freshwater, hydrogen, and cooling. My work connects digital-twin simulation, optimization, probabilistic resilience assessment, uncertainty analysis, and technical visualization.</p>
+              <p className="mt-5 max-w-3xl text-lg leading-8 text-purple-100">Researching interconnected systems that supply electricity, freshwater, hydrogen, heating and cooling. My work connects SOEC and PEM electrolysis, SOFC/fuel-cell pathways, MED desalination, thermal recovery, waste-to-energy, storage, digital-twin simulation, optimization, probabilistic resilience, uncertainty, sustainability, and techno-economic analysis.</p>
               <Link href="/research" className="mt-7 inline-block rounded-full bg-white px-6 py-3 font-bold text-purple-900">Explore the research →</Link>
             </div>
             <div className="grid grid-cols-2 gap-3">
-              {["Digital Twin","Optimization","Multi-Service Resilience","Monte Carlo","Fault Trees","Techno-Economic Analysis"].map(x=><div key={x} className="rounded-2xl bg-white/10 p-4 font-semibold">{x}</div>)}
+              {["Digital Twin","SOEC / SOFC","Hydrogen Systems","Multi-Service Resilience","Monte Carlo","Techno-Economic Analysis"].map(x=><div key={x} className="rounded-2xl bg-white/10 p-4 font-semibold">{x}</div>)}
             </div>
           </div>
         </div>
@@ -329,6 +329,7 @@ export default function Home() {
       <Section title="Hackathons & Competitions" subtitle="Team builds created through rapid prototyping, technical competitions, and problem-focused challenges." id="hackathons" items={hackathons} onSelect={setSelected} />
       <div className="mx-auto max-w-7xl px-6 md:px-8"><div className="flex justify-center"><a href={links.devpost} target="_blank" className="rounded-full border border-purple-200 bg-white px-6 py-3 font-bold text-purple-800 shadow-sm">View my Devpost portfolio →</a></div></div>
       <Section title="Additional Engineering Projects" subtitle="Earlier builds that show breadth across digital twins, simulation, embedded systems, and software security." id="additional-projects" items={additionalProjects} onSelect={setSelected} />
+      <Section title="Conference & Research Recognition" subtitle="Research presentation and student innovation recognition at an international smart-energy conference." id="conference" items={conferenceHighlights} onSelect={setSelected} />
       <Section title="Experience" subtitle="Research and software roles where I applied engineering, development, and technical communication." id="experience" items={experience} onSelect={setSelected} />
       <Section title="Leadership & Community" subtitle="Experiences that strengthened how I lead, communicate, mentor, and represent technical work." id="leadership" items={leadership} onSelect={setSelected} />
 

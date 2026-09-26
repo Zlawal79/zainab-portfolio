@@ -187,11 +187,11 @@ const additionalProjects: CardItem[] = [
 const experience: CardItem[] = [
   {
     id: "usrf",
-    title: "Smart Energy Systems Research Assistant",
-    category: "Ontario Tech University · USRF Co-op",
-    date: "May 2026 – Present",
+    title: "Simulation-Based Resiliency Analysis of Hybrid Energy Systems",
+    category: "Ontario Tech University · Research Co-op",
+    date: "May 2025 – Present",
     tools: ["MATLAB", "Simulink", "HOMER Pro", "MG-OPT", "Python/Octave", "Research"],
-    summary: "Ongoing co-op research on simulation-based resiliency analysis of hybrid multi-generation energy systems, connecting electricity, freshwater, hydrogen, heating/cooling, storage, renewable and alternative energy pathways, digital-twin simulation, optimization, uncertainty, and technical communication.",
+    summary: "Ongoing research co-op focused on simulation-based resiliency analysis of hybrid multi-generation energy systems and their application to sustainable rural communities. The work connects electricity, freshwater, hydrogen, cooling, storage, renewable and alternative energy pathways, digital twins, optimization, probabilistic resilience, uncertainty, sustainability, and software-based engineering analysis, with Gbamu-Gbamu, Nigeria as a major African case study."
     bullets: ["Developed and evaluated simulation and optimization workflows.", "Connected engineering analysis with dashboards and visual communication.", "Supported scenario studies, validation workflows, technical reports, and presentations."],
     detail: "/research",
   },
@@ -228,7 +228,7 @@ const experience: CardItem[] = [
 const conferenceHighlights: CardItem[] = [
   {
     id: "sege-2026",
-    title: "IEEE SEGE 2026",
+    title: "IEEE SEGE 2026 — Research Presenter & Student Innovation Competition Award",
     category: "14th International Conference on Smart Energy Grid Engineering",
     date: "August 19–21, 2026 · Ontario Tech University",
     tools: ["Research Presentation", "Energy Systems", "Simulation", "Resilience", "Technical Communication"],
@@ -279,7 +279,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-8">
           <a href="#top" className="font-serif text-2xl font-bold">Zainab<span className="text-purple-600">.</span></a>
           <div className="hidden items-center gap-5 text-sm font-semibold text-purple-800 lg:flex">
-            <a href="#research">Research</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
+            <a href="#research">Research</a><a href="#projects">Projects</a><a href="#conference">Conferences</a><a href="#experience">Experience</a>
             <a href="#leadership">Leadership</a><a href="#credentials">Credentials</a><a href="#skills">Skills</a><a href="#connect">Connect</a>
           </div>
           <a href={links.resume} target="_blank" className="rounded-full bg-purple-700 px-5 py-2 text-sm font-bold text-white">Resume</a>

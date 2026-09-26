@@ -288,7 +288,7 @@ export default function Home() {
 
       <section id="top" className="mx-auto grid max-w-7xl items-center gap-14 px-6 py-20 md:grid-cols-[1.25fr_.75fr] md:px-8 md:py-28">
         <div>
-          <p className="mb-5 inline-flex rounded-full border border-purple-200 bg-white px-4 py-2 text-sm font-semibold text-purple-700 shadow-sm">Software Engineering · Applied Research · AI/ML</p>
+          <p className="mb-5 inline-flex rounded-full border border-purple-200 bg-white px-4 py-2 text-sm font-semibold text-purple-700 shadow-sm">Software Engineering · Applied Research · AI/ML</p>\n          <p className="mb-5 text-base font-bold text-purple-700">Seeking Winter 2027 and Summer 2027 co-op opportunities</p>
           <h1 className="font-serif text-5xl font-bold leading-[1.05] md:text-7xl">I build software and intelligent systems for <span className="bg-gradient-to-r from-purple-800 via-purple-600 to-fuchsia-500 bg-clip-text text-transparent">real-world problems.</span></h1>
           <p className="mt-7 max-w-3xl text-lg leading-8 text-purple-950/70">I&apos;m Zainab Lawal, a Software Engineering student at Ontario Tech University. My work spans resilient energy infrastructure and digital twins, machine learning, cybersecurity, data products, and full-stack applications. I&apos;m currently seeking Winter 2027 and Summer 2027 co-op opportunities.</p>
           <div className="mt-9 flex flex-wrap gap-3">

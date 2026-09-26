@@ -64,7 +64,7 @@ const contributions = [
   "Participated in testing, debugging, and feature refinement.",
   "Collaborated with teammates to improve usability and accessibility.",
   "Contributed to research on bias detection and inclusive hiring practices.",
-  "Helped present the project during the TECHNATION AI Equity Challenge.",
+  "Helped present the project during the TECHNATION AI Equity Data Challenge · Top 5.",
 ];
 
 export default function EquityDecoderPage() {
@@ -201,7 +201,7 @@ export default function EquityDecoderPage() {
 
           <p className="mt-6 leading-8 text-purple-900/70">
             Equity Decoder was developed as part of the TECHNATION AI Equity
-            Challenge. Working through multiple competition stages allowed our
+            Data Challenge, where the project placed in the Top 5. Working through multiple competition stages allowed our
             team to combine software engineering, artificial intelligence,
             accessibility considerations, policy research, and user-centered
             design into one practical solution.

@@ -192,7 +192,7 @@ const experience: CardItem[] = [
     date: "May 2025 – Present",
     tools: ["MATLAB", "Simulink", "HOMER Pro", "MG-OPT", "Python/Octave", "SOEC/SOFC", "Research"],
     summary: "Ongoing research co-op focused on simulation-based resiliency analysis of hybrid multi-generation energy systems and their application to sustainable rural communities. The work connects electricity, freshwater, hydrogen, cooling, storage, renewable and alternative energy pathways, digital twins, optimization, probabilistic resilience, uncertainty, sustainability, and software-based engineering analysis, with Gbamu-Gbamu, Nigeria as a major African case study.",
-    bullets: ["Developed and evaluated simulation and optimization workflows.", "Connected engineering analysis with dashboards and visual communication.", "Supported scenario studies, validation workflows, technical reports, and presentations."],
+    bullets: ["Developed and evaluated MATLAB/Simulink digital-twin, MG-OPT, HOMER Pro, Python and Octave simulation/optimization workflows.", "Studied multi-generation interactions across electricity, freshwater, hydrogen, heating/cooling, storage, SOEC/SOFC, PEM electrolysis, MED desalination, thermal recovery, waste-to-energy and hybrid pathways.", "Extended the work into multi-service resilience using disturbance/recovery scenarios, fault-tree reasoning, probabilistic system states and Monte Carlo uncertainty analysis.", "Connected technical modeling to sustainability, environmental/resource trade-offs, lifecycle and techno-economic analysis, dashboards, reports, conference presentations and public-facing engineering communication."],
     detail: "/research",
   },
   {
@@ -262,7 +262,7 @@ const credentials = [
 const skillGroups = [
   ["Software Engineering", ["JavaScript", "TypeScript", "React", "Next.js", "React Native", "Node.js", "Java", "C++", "C#", "Git/GitHub", "API Development"]],
   ["AI, ML & Data", ["Python", "Pandas", "scikit-learn", "Machine Learning", "Data Visualization", "SQL", "Grounded AI Workflows"]],
-  ["Research & Simulation", ["MATLAB", "Simulink", "HOMER Pro", "Monte Carlo Simulation", "Digital Twins", "Resilience Modeling", "Optimization"]],
+  ["Research & Simulation", ["MATLAB", "Simulink", "HOMER Pro", "MG-OPT", "Octave", "Monte Carlo Simulation", "Fault Tree Analysis", "Digital Twins", "Resilience Modeling", "Optimization", "SOEC / SOFC", "Hydrogen Systems", "Techno-Economic Analysis"]],
   ["Product & Collaboration", ["Agile SDLC", "Technical Documentation", "Research Communication", "UX", "Public Speaking", "Team Leadership"]],
 ];
 
@@ -288,7 +288,8 @@ export default function Home() {
 
       <section id="top" className="mx-auto grid max-w-7xl items-center gap-14 px-6 py-20 md:grid-cols-[1.25fr_.75fr] md:px-8 md:py-28">
         <div>
-          <p className="mb-5 inline-flex rounded-full border border-purple-200 bg-white px-4 py-2 text-sm font-semibold text-purple-700 shadow-sm">Software Engineering · Applied Research · AI/ML</p>\n          <p className="mb-5 text-base font-bold text-purple-700">Seeking Winter 2027 and Summer 2027 co-op opportunities</p>
+          <p className="mb-5 inline-flex rounded-full border border-purple-200 bg-white px-4 py-2 text-sm font-semibold text-purple-700 shadow-sm">Software Engineering · Applied Research · AI/ML</p>
+          <p className="mb-5 text-base font-bold text-purple-700">Seeking Winter 2027 and Summer 2027 co-op opportunities</p>
           <h1 className="font-serif text-5xl font-bold leading-[1.05] md:text-7xl">I build software and intelligent systems for <span className="bg-gradient-to-r from-purple-800 via-purple-600 to-fuchsia-500 bg-clip-text text-transparent">real-world problems.</span></h1>
           <p className="mt-7 max-w-3xl text-lg leading-8 text-purple-950/70">I&apos;m Zainab Lawal, a Software Engineering student at Ontario Tech University. My work spans resilient energy infrastructure and digital twins, machine learning, cybersecurity, data products, and full-stack applications. I&apos;m currently seeking Winter 2027 and Summer 2027 co-op opportunities.</p>
           <div className="mt-9 flex flex-wrap gap-3">

@@ -31,7 +31,10 @@ const tools = ["MATLAB", "Simulink", "MG-OPT", "HOMER Pro", "Python", "Octave", 
 
 const contributions = [
   "Built and refined simulation workflows for integrated multi-generation energy systems.",
-  "Analyzed interactions between electricity, freshwater, hydrogen, heating/cooling, storage, backup generation, and thermal-energy recovery.",\n  "Studied PEM and SOEC hydrogen-production pathways, including high-temperature electrolysis and the role of recovered heat in reducing electrical demand.",\n  "Investigated SOFC electricity-and-heat production and its integration with hydrogen, thermal recovery, and other multi-generation subsystems.",\n  "Connected MED desalination and absorption refrigeration/cooling to the broader energy-water-hydrogen system and community service demands.",
+  "Analyzed interactions between electricity, freshwater, hydrogen, heating/cooling, storage, backup generation, and thermal-energy recovery.",
+  "Studied PEM and SOEC hydrogen-production pathways, including high-temperature electrolysis and the role of recovered heat in reducing electrical demand.",
+  "Investigated SOFC electricity-and-heat production and its integration with hydrogen, thermal recovery, and other multi-generation subsystems.",
+  "Connected MED desalination and absorption refrigeration/cooling to the broader energy-water-hydrogen system and community service demands.",
   "Developed multi-service resilience concepts that evaluate more than electrical supply alone.",
   "Worked with scenario-based disturbances, degradation, recovery, and service-coverage metrics.",
   "Extended the resilience framework toward probability-informed analysis using fault-tree logic and Monte Carlo uncertainty analysis.",

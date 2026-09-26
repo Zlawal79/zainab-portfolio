@@ -61,7 +61,7 @@ export default function ResearchPage() {
       <div className="grid gap-4 md:grid-cols-3">
         <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm"><p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Co-op Research</p><p className="mt-2 text-xl font-bold">May 2025 – Present</p><p className="mt-2 text-sm leading-6 text-purple-950/60">Smart & Resilient Energy Systems, Ontario Tech University</p></div>
         <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm"><p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Primary Case Study</p><p className="mt-2 text-xl font-bold">Gbamu-Gbamu, Nigeria</p><p className="mt-2 text-sm leading-6 text-purple-950/60">Rural African community case study for integrated multi-service energy access.</p></div>
-        <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm"><p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Research Output</p><p className="mt-2 text-xl font-bold">IEEE SEGE 2026</p><p className="mt-2 text-sm leading-6 text-purple-950/60">Conference presentation and Student Innovation Competition recognition.</p></div>
+        <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm"><p className="text-xs font-bold uppercase tracking-[.18em] text-purple-600">Research Output</p><p className="mt-2 text-xl font-bold">IEEE SEGE 2026</p><p className="mt-2 text-sm leading-6 text-purple-950/60">Research presentation and official Student Innovation Competition Awards listing.</p></div>
       </div>
     </section>
 
@@ -130,7 +130,7 @@ export default function ResearchPage() {
       <div className="mb-16 rounded-[2.5rem] bg-purple-950 p-8 text-white md:p-10">
         <p className="text-sm font-bold uppercase tracking-[.2em] text-purple-300">IEEE SEGE 2026</p>
         <h2 className="mt-3 font-serif text-4xl font-bold">Analysis and Simulation of Integrated Multi-Generation Micro-Energy Systems in Rural African Communities</h2>
-        <p className="mt-5 max-w-4xl leading-8 text-purple-100">I presented this work with Dr. Hossam A. Gabbar at the 14th IEEE International Conference on Smart Energy Grid Engineering at Ontario Tech University. The conference program lists the project in its Student Innovation Competition awards section.</p>
+        <p className="mt-5 max-w-4xl leading-8 text-purple-100">I presented this work with Dr. Hossam A. Gabbar at the 14th IEEE International Conference on Smart Energy Grid Engineering at Ontario Tech University. The official SEGE 2026 conference site lists my project under its Student Innovation Competition Awards, recognizing my participation in the competition and the research I presented.</p>
         <a href="https://www.ieee-sege.com" target="_blank" className="mt-7 inline-block rounded-full bg-white px-6 py-3 font-bold text-purple-900">IEEE SEGE 2026</a>
       </div>
       <h2 className="text-center font-serif text-4xl font-bold md:text-5xl">Tools & Methods</h2>

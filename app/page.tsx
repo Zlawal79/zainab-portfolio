@@ -360,7 +360,19 @@ export default function Home() {
         <div className="rounded-[2.5rem] border border-purple-100 bg-white p-8 text-center shadow-xl md:p-12">
           <p className="text-sm font-bold uppercase tracking-[.2em] text-purple-600">Let&apos;s Connect</p>
           <h2 className="mt-3 font-serif text-4xl font-bold md:text-5xl">Continue the conversation.</h2>
-          <p className="mx-auto mt-4 max-w-2xl leading-7 text-purple-950/65">Explore my code, connect with me professionally, or view my résumé. QR codes for GitHub and LinkedIn will also live here for career-fair visitors viewing the portfolio on a laptop.</p>
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-purple-950/65">Explore my code, connect with me professionally, or view my résumé. For career-fair visitors, the QR codes below open my GitHub and LinkedIn directly.</p>
+          <div className="mx-auto mt-8 grid max-w-xl gap-5 sm:grid-cols-2">
+            <a href={links.github} target="_blank" className="rounded-3xl border border-purple-100 bg-purple-50 p-5 transition hover:-translate-y-1 hover:shadow-lg">
+              <img src={"https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=" + encodeURIComponent(links.github)} alt="QR code for Zainab Lawal's GitHub" className="mx-auto h-44 w-44 rounded-xl bg-white p-2" />
+              <p className="mt-4 font-bold text-purple-900">Scan for GitHub</p>
+              <p className="mt-1 text-sm text-purple-950/55">@Zlawal79</p>
+            </a>
+            <a href={links.linkedin} target="_blank" className="rounded-3xl border border-purple-100 bg-purple-50 p-5 transition hover:-translate-y-1 hover:shadow-lg">
+              <img src={"https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=" + encodeURIComponent(links.linkedin)} alt="QR code for Zainab Lawal's LinkedIn" className="mx-auto h-44 w-44 rounded-xl bg-white p-2" />
+              <p className="mt-4 font-bold text-purple-900">Scan for LinkedIn</p>
+              <p className="mt-1 text-sm text-purple-950/55">Zainab Lawal</p>
+            </a>
+          </div>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a href={links.github} target="_blank" className="rounded-full bg-purple-700 px-6 py-3 font-bold text-white">GitHub</a>
             <a href={links.devpost} target="_blank" className="rounded-full bg-purple-50 px-6 py-3 font-bold text-purple-800">Devpost</a>
